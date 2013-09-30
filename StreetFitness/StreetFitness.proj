@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>8d1f8f9c-92db-47a4-bbf1-813349295175</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <AppIdentifier>com.telerik.StreetFitness</AppIdentifier>
+    <ProjectName>StreetFitness</ProjectName>
+    <IsRunnable>true</IsRunnable>
+    <FrameworkVersion>3.0.0</FrameworkVersion>
+    <AndroidPermissions>android.permission.CAMERA;android.permission.VIBRATE;android.permission.ACCESS_COARSE_LOCATION;android.permission.ACCESS_FINE_LOCATION;android.permission.ACCESS_LOCATION_EXTRA_COMMANDS;android.permission.READ_PHONE_STATE;android.permission.INTERNET;android.permission.RECEIVE_SMS;android.permission.RECORD_AUDIO;android.permission.MODIFY_AUDIO_SETTINGS;android.permission.READ_CONTACTS;android.permission.WRITE_CONTACTS;android.permission.WRITE_EXTERNAL_STORAGE;android.permission.ACCESS_NETWORK_STATE;android.permission.ACCOUNT_MANAGER;android.permission.GET_ACCOUNTS;android.permission.MANAGE_ACCOUNTS;android.permission.BROADCAST_STICKY</AndroidPermissions>
+    <CorePlugins>org.apache.cordova.core.device;org.apache.cordova.core.AudioHandler;org.apache.cordova.core.battery-status;org.apache.cordova.core.camera;org.apache.cordova.core.console;org.apache.cordova.core.contacts;org.apache.cordova.core.device;org.apache.cordova.core.device-motion;org.apache.cordova.core.device-orientation;org.apache.cordova.core.dialogs;org.apache.cordova.core.file;org.apache.cordova.core.file-transfer;org.apache.cordova.core.geolocation;org.apache.cordova.core.globalization;org.apache.cordova.core.inappbrowser;org.apache.cordova.core.media-capture;org.apache.cordova.core.network-information;org.apache.cordova.core.splashscreen;org.apache.cordova.core.vibration</CorePlugins>
+    <DeviceOrientations>Portrait;Landscape</DeviceOrientations>
+    <iOSStatusBarStyle>Default</iOSStatusBarStyle>
+    <AndroidHardwareAcceleration>false</AndroidHardwareAcceleration>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
+</Project>
