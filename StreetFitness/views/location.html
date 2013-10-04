@@ -1,0 +1,19 @@
+<!--Location-->
+<div id="tabstrip-location" 
+     data-role="view"  
+     data-title="Location" 
+     data-init="app.locationService.initLocation" 
+     data-show="app.locationService.show" 
+     data-hide="app.locationService.hide" 
+     data-model="app.locationService.viewModel" 
+     data-stretch="true">
+
+    <div id="map-search-wrap">
+        <button id="map-navigate-home" data-bind="click: onNavigateHome"></button>
+        <form onsubmit="return false;">
+            <input id="map-address" type="search" data-bind="value: address" placeholder="Address"/>
+            <input id="map-search" type="submit" value="" data-bind="click: onSearchAddress" />
+        </form>
+    </div>
+    <div id="map-canvas"></div>
+</div>

@@ -1,0 +1,39 @@
+<div id="exercise-detail"
+     data-role="view"
+     data-title="Exercise Details"
+     data-show="app.exercises.viewModel.showDetail">
+    <div>
+        <h2 class="center" data-bind="text: name"></h2>
+        <table class="exercise-table">
+            <tr>
+                <th>Main Muscle</th>
+                <th>Secondary Muscle</th>
+            </tr>
+            <tr>
+                <td data-bind="text: mainMuscles"></td>
+                <td data-bind="text: secondaryMuscles"></td>
+            </tr>
+        </table>
+        <div class="center" >
+            <br />
+            <img data-bind="attr: { src: image }" />
+            <br />
+            <div id="description-container" data-bind="attr: { data-description: id }">
+                <a data-role="button" data-click="app.exercises.viewModel.showDescription">Description</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="exercise-description"
+    data-role="modalview"
+    class="description-modal-view">
+    <div class="center">
+        <h2 data-bind="text: name"></h2>
+        <div data-role="scroller" class="description-scroller">
+            <div data-bind="text: description"></div>
+        </div>
+        <br />
+        <a data-click="app.exercises.viewModel.closeDescription" data-role="button">Back</a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<!--Exercises-->
+<div id="tabstrip-exercises"
+    data-role="view"
+    data-title="Exercises"
+    data-model="app.exercises.viewModel">
+    
+    <ul data-role="listview"
+        data-bind="source: exercisesDataSource"
+        data-template="exercise-template">
+    </ul>
+</div>
+
+<!--Exercise template-->
+<script type="text/x-kendo-tmpl" id="exercise-template">
+    <div>
+        <span class="exercise-name">${name}</span>
+        <a class="position-right button" href="views/exercise-detail.html?uid=${id}" data-role="button">Details</a>
+    </div>
+</script>

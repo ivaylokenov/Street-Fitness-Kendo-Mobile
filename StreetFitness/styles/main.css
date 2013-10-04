@@ -2,9 +2,14 @@ body, html {
     margin:0;   
     height:100%;
     width:100%;
+    background-color: black;
 }
 
 /* COMMON STYLES*/
+.view-content {
+    text-align: center;
+}
+
 .view-content h1{
     color:#42454a;
     font-size:1.8em;
@@ -23,7 +28,7 @@ body, html {
 
 /* IMAGE STYLES*/
 .img {
-    background-image:url(../styles/images/icenium.png);
+    background-image:url(../styles/images/main-logo.png);
     background-repeat:no-repeat;
     text-align:center;
     width:320px;
@@ -36,6 +41,41 @@ body, html {
     width:85px;
     height:60px;
     margin:40px auto;
+}
+
+/* EXERCISE STYLES */
+.exercise-name {
+    line-height:2.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.exercise-table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.exercise-table td, th {
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.description-modal-view {
+    height: 220px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.description-scroller {
+    height: 100px;
+    margin: 0 5px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 /* BUTTON STYLES*/

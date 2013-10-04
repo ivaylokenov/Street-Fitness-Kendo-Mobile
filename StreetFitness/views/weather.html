@@ -1,0 +1,37 @@
+<!--Weather-->
+<div id="tabstrip-weather" 
+     data-role="view"  
+     data-title="Weather" 
+     data-model="app.weatherService.viewModel">
+
+    <div class="weather">
+        <h1>20-Day Forecast</h1>
+
+        <div class="separator">
+            <div class="dark"></div>
+            <div class="light"></div>
+        </div>
+
+        <ul class="forecast-list" 
+            data-role="listview" 
+            data-bind="source: weatherDataSource" 
+            data-template="weather-forecast-template">
+        </ul>
+    </div>
+</div>
+
+<!--Weather forecast template-->
+<script type="text/x-kendo-tmpl" id="weather-forecast-template">
+    <div>
+        <div class="position-left">
+            <span class="weather-info date">${day}</span>
+        </div>
+        <div class="position-right">
+            <span class="weather-info temperature high">${highTemperature}<sup>&deg;</sup></span>
+            <span class="weather-info temperature low">${lowTemperature}<sup>&deg;</sup></span>
+        </div>
+        <div class="position-center">
+            <span class="weather-icon ${image}"></span>
+        </div>
+    </div>
+</script>
