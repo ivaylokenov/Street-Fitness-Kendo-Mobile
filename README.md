@@ -1,4 +1,2 @@
-kendomobilestreetfitness
-========================
-
-KendoMobileStreetFitness
+Kendo Mobile Street Fitness
+===========================
